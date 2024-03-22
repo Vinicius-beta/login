@@ -10,16 +10,41 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="login">
-      <h3>Bem Vindo</h3>
-      <input type="email" placeholder="Digite seu Email">
-      <input type="password" placeholder="Senha">
-      <input type="submit">
-      <a href="#">VOLTAR</a>
-    </div>
-  </div>
+<div  class="fundo">
+
+    <form class="box">
+      <div>
+        <h3>Welcome</h3>
+        <input type="text" placeholder="Digite seu Email"  id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+      </div>
+    </form>
+
+      <script>
+
+
+      function logar(){
+
+        var login =  document.getElementById('login').value;
+        var senha =  document.getElementById('senha').value;
+
+        if(login == "admin" && senha == "obrigado"){
+        
+        location.href = "https://vinicius-beta.github.io/blog-aderiva/";       
+        }else{
+          alert('Usuario ou  senha incorreta');
+        }
+      }
+
+
+</script>
+
+
+
+</div>
+
+
 
 </body>
-
 </html>
